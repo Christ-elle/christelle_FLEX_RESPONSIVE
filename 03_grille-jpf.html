@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une grille en flex</title>
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <!-- MES STYLES -->
+    <link rel="stylesheet" href="css/03_grille-jpf.css">
+</head>
+<body>
+    <!-- pour faire un raccourci d'une partie de texte alt + maj + a  -->
+
+    <div class="conteneur">
+        <header class="col-10 marge-1">
+            <div class="">
+                <h1>Une page avec une grille</h1>
+            </div>
+        </header>
+
+        <div>
+            <div class="row">
+                <div class="col-3 brun-clair">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia cumque iste alias. Assumenda, excepturi qui rem quod consectetur modi ullam suscipit officiis fugiat, provident libero hic, vel veritatis possimus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora excepturi magni repellendus distinctio asperiores sit similique? Earum delectus fugiat molestias rerum, a similique deleniti vitae, facilis inventore quia nemo totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsa porro harum! Maxime, modi illum vitae consectetur tenetur, sapiente iste perferendis ipsam quasi ab numquam id dolorem delectus incidunt animi!</p>
+                </div>
+                <div class="col-4 marge-1 brun-fonce">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia cumque iste alias. Assumenda, excepturi qui rem quod consectetur modi ullam suscipit officiis fugiat, provident libero hic, vel veritatis possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, assumenda, ullam nobis animi pariatur delectus repellendus obcaecati ab in recusandae omnis accusantium modi mollitia commodi nihil dolores doloremque dolore expedita! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque id, totam atque aut quo vitae eveniet a fugiat amet obcaecati minus laboriosam sed sequi explicabo voluptatum at assumenda debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt facilis facere. Quod rerum quo aliquam autem, placeat dicta porro veritatis neque ex quisquam ipsam quis illum hic et expedita!</p>
+                </div>
+                <div class="col-3 marge-1 bordeaux">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate consequuntur dolorum quis quos odio tempora hic aspernatur? Ipsa non sunt obcaecati quia ad praesentium atque facere accusantium sit perferendis. Ut autem, accusamus enim, qui minus sequi quo vel dolores necessitatibus vitae nam. Suscipit voluptates deserunt tenetur neque tempore cumque totam, aut eligendi alias vel exercitationem commodi voluptas, voluptatum atque.Fugiat, autem veniam magni eius commodi ab similique laborum dolore, assumenda cumque, aliquam fuga rem iusto corporis minus harum necessitatibus dicta! </p>
+                </div>
+            </div><!-- fin de la première rangée -->
+        
+            <div class="row">
+                <div class="col-3 rouge">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, magni mollitia! Quia similique magni ut natus, voluptatem porro perferendis rerum, cum quis consequuntur quisquam obcaecati, id corrupti inventore expedita earum.</div>
+                <div class="col-2 marge-1 orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus ratione reiciendis, vero maxime quod eum corporis quia ad consectetur aperiam minima, quasi doloremque nam blanditiis? Iure aspernatur eos voluptatem.</div>
+                <div class="col-2 orange2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus ratione reiciendis, vero maxime quod eum corporis quia ad consectetur aperiam minima, quasi doloremque nam blanditiis? Iure aspernatur eos voluptatem.</div>
+                <div class="col-3 marge-1 jaune">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus ratione reiciendis, vero maxime quod eum corporis quia ad consectetur aperiam minima, quasi doloremque nam blanditiis? Iure aspernatur eos voluptatem.</div>
+            </div> <!-- fin de la deuxième rangée -->
+            <div class="row-reverse">
+                <div class="col-6 orange">
+                    <p>1/ A gauche ? ben non car je suis dans un élément parent de cette div qui est row-reverse</p>
+                </div>
+                <div class="col-6 jaune">
+                    <p>2/ A droite</p>
+                </div>
+            </div>
+            <!-- Fin de la 5eme rangée  -->
+            <div class="row">
+                <div class="col-4 vert">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate molestiae reiciendis sed facere repellendus porro incidunt corporis quibusdam laudantium, iste ex architecto recusandae voluptatum sapiente doloribus velit labore exercitationem.</p>
+                </div>
+                <div class="col-8 vert-fonce2">
+                    <div class="row">
+                        <div class="col-4 turquoise">
+                            <p>Row dans la col n°1</p>
+                        </div>
+                        <div class="col-4 rouge">
+                            <p>Row dans la col n°2</p>
+                        </div>
+                        <div class="col-4 orange2">
+                            <p>Row dans la col n°3</p>
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div>
+        </div><!-- fin de la première partie -->
+
+        <div class="gras">
+            <div class="col-12 brun-fonce">12 colonnes</div>
+            <div class="col-11 marron">11 colonnes</div>
+            <div class="col-10 bordeaux">10 colonnes</div>
+            <div class="col-9 rouge">9 colonnes</div>
+            <div class="col-8 orange">8 colonnes</div>
+            <div class="col-7 orange2">7 colonnes</div>
+            <div class="col-6 jaune">6 colonnes</div>
+            <div class="col-5 vert">5 colonnes</div>
+            <div class="col-4 vert-fonce">4 colonnes</div>
+            <div class="col-3 turquoise">3 colonnes</div>
+            <div class="col-2 bleu-clair">2 colonnes</div>
+            <div class="col-1 bleu-fonce">1 colonne</div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-1 brun-fonce">Hi !</div>
+            <div class="col-1 marron">Hi !</div>
+            <div class="col-1 bordeaux">Hi !</div>
+            <div class="col-1 rouge">Hi !</div>
+            <div class="col-1 orange">Hi !</div>
+            <div class="col-1 orange2">Hi !</div>
+            <div class="col-1 jaune">Hi !</div>
+            <div class="col-1 vert">Hi !</div>
+            <div class="col-1 vert-fonce">Hi !</div>
+            <div class="col-1 turquoise">Hi !</div>
+            <div class="col-1 bleu-clair">Hi !</div>
+            <div class="col-1 bleu-fonce">Hi !</div>
+        </div>
+        
+        <footer class="row">
+            <div class="col-9 brun-fonce">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sunt enim minima iste, beatae rem dolorem recusandae, quod quia omnis assumenda nulla eius itaque rerum sapiente porro quis ad cumque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, nostrum dolores expedita quisquam, molestias sit hic eligendi repellat magnam magni aliquam tempore animi doloremque tempora ullam aliquid, velit doloribus officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim fugiat iste suscipit quas voluptatum dolorem distinctio, repellat tempora expedita, magnam officiis velit? Similique ratione illum quaerat tenetur ipsum vitae quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illo ex tempora iste delectus odio voluptates quisquam nihil officia, exercitationem sunt fuga optio modi atque illum, vitae, ipsam debitis repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque neque fuga nisi quidem error necessitatibus rem totam eius! Totam officiis ea omnis fugit quis in veritatis quam. Vel, quam eaque.
+                Cum, dolorum dolorem, accusamus neque placeat, perferendis odit voluptatibus enim sequi quos saepe esse quaerat modi eum animi at autem ut voluptates corporis magnam! Expedita quae ducimus perferendis sint eveniet.
+                Magni enim excepturi sint adipisci explicabo maiores libero distinctio earum tempora quam odio officia totam, exercitationem voluptatibus quae harum debitis expedita! Nesciunt facere maxime doloremque soluta, maiores nam incidunt explicabo.
+                Excepturi illum laboriosam accusantium quia! A facere laborum, dolorum enim iure similique beatae placeat fuga molestias iste modi voluptatibus? Et, vero asperiores in perspiciatis vitae sequi soluta perferendis officiis blanditiis?
+                Aut, non repellat quos distinctio dicta vel nam quam ullam atque! Facilis necessitatibus illo asperiores odit laudantium. Soluta at cumque cum sed perspiciatis provident adipisci iste esse laboriosam, dicta libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nihil, rerum explicabo deserunt non quibusdam illum nemo eius possimus omnis id fugiat quo earum cum laborum fuga obcaecati ut necessitatibus.
+                Odio deserunt animi, quasi molestiae consectetur deleniti maiores quam nisi ut accusantium numquam magnam voluptate perferendis soluta ducimus earum laudantium reiciendis, odit culpa suscipit amet. Ea quaerat vitae fugiat quia.
+                Minima temporibus, aliquam ullam quia inventore rem dolores officiis expedita aspernatur recusandae, modi explicabo debitis blanditiis! Quisquam voluptate velit atque ea optio eaque corrupti, beatae voluptatibus, obcaecati accusamus, excepturi sint? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maxime illo, et neque magni, quisquam corporis vitae ducimus ex omnis eveniet molestias debitis doloribus, officiis maiores aliquam ea adipisci reiciendis.Quia qui modi veritatis esse, autem non inventore corporis atque placeat laborum! Quam quae atque nobis pariatur itaque iste quo maiores. Libero non velit consectetur omnis repudiandae, accusamus at laborum?</p>
+            </div>
+
+            <div class="col-3 brun-clair">
+                <ul>
+                    <li>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sunt enim minima iste, beatae rem dolorem recusandae, quod quia omnis assumenda nulla eius itaque rerum sapiente porro quis ad cumque?</li>
+                    <li>2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, nostrum dolores expedita quisquam, molestias sit hic eligendi repellat magnam magni aliquam tempore animi doloremque tempora ullam aliquid, velit doloribus officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                    <li>3 Similique ratione illum quaerat tenetur ipsum vitae quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illo ex tempora iste delectus odio voluptates quisquam nihil officia, exercitationem sunt fuga optio modi atque illum, vitae, ipsam debitis repellat?</li>
+                </ul>
+            </div>
+
+        </footer>
+    
+    </div><!-- fin de conteneur -->
+</body>
+</html>
