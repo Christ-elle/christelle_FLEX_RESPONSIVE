@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christelle_asterix_correction</title>
+    <!-- style dans l'en-tête  -->
+    <style>
+        /* * l'étoile= tous les éléments HTML  */
+        * {
+            box-sizing: border-box;
+        }
+        .bleu {
+            background-color: lightcyan;
+        }
+        /* .orange {
+            background-color: orange;
+        } */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* entête de la page  */
+        header {
+            background-color: rgb(238, 225, 45);
+            padding: 30px;
+            font-size: 35px;
+            text-align: center;
+            color: #fff;
+        }
+        /* création des éléments qui flottent les uns par rapport aux autres  */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: #ccc;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        /* A/ autre méthode pour rétablir le flux, on ajoute rien dans le HTML   */
+        /* ce qui vient après section  */
+        section::after {
+            /* Après la section contenu vide, ce qui permet de bien avoir les caractèristiques du footer (padding)  */
+            /* clear: both; rétablis le flux  */
+            clear: both;
+            content: "";
+            display: table;
+        }
+        article {
+            float: left; 
+            width: 70%;
+            height: 300px;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        footer {
+            background-color: rgb(238, 225, 45);
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+        }
+        /* clear, méthode habituelle  */
+        .clear {
+            clear: both;
+        }
+        @media(max-width: 600px) {
+            nav,article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>HTML CSS : une maquette responsive en float</h2><br>
+    <p>Dans cet exemple nous avons un en-tête, 2 colonnes/boîtes et un pied de page</p>
+    <p>Sur un ecran inférieur à 600px, les colonnes se placeront les unes au dessus des autres</p>
+    <p>Redimentionnez la fenêtre pour voir les colonnes qui se placent les unes au dessus des autres</p>
+    <header class="orange">
+        <h2>Astérix le Gaulois</h2>
+    </header>
+    <section>
+        <!-- nav qui a une largeur de 30%  à gauche  -->
+        <nav>
+            <p class="bleu">Indications : <code>&lt;nav></code> :30%</p>
+            <ul>
+                <li><a href="#">Astérix</a></li>
+                <li><a href="#">Obelix</a></li>
+                <li><a href="#">Panoramix</a></li>
+                <li><a href="#">Bonemine</a></li>
+            </ul>
+        </nav>
+        <article>
+            <p class="bleu">Indications : <code>&lt;nav></code> :70%</p>
+            <h1>Astérix</h1>
+            <p>Astérix, anciennement Astérix le Gaulois, est une série de bande dessinée française crée le 29 Octobre 1959 par le sénariste français René Goscinny et le dessinateur français Albert Uderzo dans le n°1 du journal français Pilote</p>
+        </article>
+
+    </section>
+    <!-- rétablir le flux, méthode habituelle  -->
+    <div class="clear"></div>
+    <footer>
+        <p>Pied de page</p>
+    </footer>
+    
+    
+</body>
+</html>

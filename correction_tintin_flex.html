@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction_Tintin_Flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /* style pour l'en-tête  */
+        header {
+            background-color: #5bccd6;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        /* Eléments prêts pour le flex: y a pas de class, les sections seront flex  */
+        section {
+            display: -webkit-flex;
+            display: flex;
+            border: 2px solid black;
+        }
+        /* Style pour le menu de navigation  */
+        nav {
+            /* flex regroupe flex-grow, flex-shrink, flex-basis avec une valeur de 1 */
+            flex: 1;
+            background: rgb(6, 240, 216);
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        article {
+            flex: 3;
+            padding: 10px;
+            background-color: rgb(189, 189, 241);
+        }
+        footer {
+          background-color: #255357;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+        /* Je place les propriétés des média queries après le style principal, on le charge après " fin de code "  */
+        /* Le responsive pour un ecran plus petit que 600px  */
+
+        @media (max-width: 600px){
+            section {
+                flex-direction: column;
+            }
+        }
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Les aventures de Tintin</h2>
+      </header>
+      <section>
+        <nav>
+          <ul>
+              <li><a href="#">Tintin</a></li>
+              <li><a href="#">Le Capitaine Haddock</a></li>
+              <li><a href="#">Milou</a></li>
+              <li><a href="#">Le Professeur Tournesol</a></li>
+          </ul>
+        </nav>
+        <article>
+          <h1>Tintin</h1>
+          <p>Les Aventures de Tintin constituent une série de bandes dessinées créée par le dessinateur et scénariste belge Hergé. </p>
+          <p>Avec 250 millions d'exemplaires vendus, Les Aventures de Tintin font partie des bandes dessinées européennes les plus célèbres et plus populaires du XXᵉ siècle.</p>
+        </article>
+      </section>
+      <footer>
+        <p>Pied de page</p>
+      </footer>
+    
+</body>
+</html>

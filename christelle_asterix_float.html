@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christelle_asterix_float</title>
+    <style>
+       #conteneur {
+           background-color:white;
+           height: 800px;
+           width: 100%;
+           margin: 0 auto;
+       }
+       main {
+           width: 100%;
+
+       }
+       h2 {
+           font-weight: bold;
+       }
+       .bleu {
+           width: 100%;
+           float: left;
+           background-color: rgb(182, 182, 236);
+       }
+       h1 {
+           text-align: center;
+       }
+       aside {
+           width: 30%;
+           height: 125px;
+           float: left;
+           background-color: thistle;
+       }
+       section {
+           width: 70%;
+           float: left;
+           height: 125px;
+           background-color: rgb(226, 124, 226);
+       }
+       footer {
+           text-align: center;
+       }
+       @media (max-width: 600px) {
+           body {
+               background-color: rgb(166, 227, 255);
+            }
+            main aside {
+                width: 100%;
+            }
+            section {
+                width: 100%;
+            }
+       } 
+
+
+
+
+
+
+
+    </style>
+</head>
+<body> 
+    <div id="conteneur">
+    <h2>HTML CSS : une maquette responsive en float</h2><br>
+    <p>Dans cet exemple nous avons un en-tête, 2 colonnes/boîtes et un pied de page</p>
+    <p>Sur un ecran inférieur à 600px, les colonnes se placeront les unes au dessus des autres</p>
+    <p>Redimentionnez la fenêtre pour voir les colonnes qui se placent les unes au dessus des autres</p>
+    <main class="bleu">
+        <header>
+            <h1>Asterix le Gaulois</h1>
+        </header>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#">Astérix</a></li>
+                    <li><a href="#">Obelix</a></li>
+                    <li><a href="#">Panoramix</a></li>
+                    <li><a href="#">Bonemine</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+            <h2>Astérix</h2>
+            <p>Astérix, anciennement Astérix le Gaulois, est une série de bande dessinée française crée le 29 Octobre 1959 par le sénariste français René Goscinny et le dessinateur français Albert Uderzo dans le n°1 du journal français Pilote</p>
+        </section>
+        <footer>
+            <p>Pied de page</p>
+        </footer>
+    </main>
+    </div>
+
+    
+</body>
+</html>
